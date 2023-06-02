@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 use App\Http\Controllers\MobilController;
 use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,3 +29,7 @@ Route::get('/greeting', function () {
 Route::get('/mobil',[MobilController::class, 'index']);
 Route::get('/mobil/create', [MobilController::class, 'create']);
 Route::post('/mobil/simpan-data', [MobilController::class, 'store']);
+
+Route::get('/merk', [MerkController::class, 'index']);
+Route::get('/merk/create', [MerkController::class, 'create']);
+Route::post('/merk/simpan-data', [MerkController::class, 'store']);
